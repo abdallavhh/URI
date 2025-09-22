@@ -4,143 +4,143 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>URI – Undergraduate Research Initiative | Suez Canal Branch</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/mdb.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-theme="light">
+  <!-- Theme Toggle Button -->
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+    <i class="fas fa-sun sun"></i>
+    <i class="fas fa-moon moon"></i>
+  </button>
 
   <!-- Header -->
   <header>
-    <a href="index.html"> 
-      <img src="imgs/uri1.jpg" alt="URI Logo"> 
-    </a>
+    <div class="header-container">
+      <a href="#hero" class="logo-container">
+        <img src="imgs/uri1.jpg" alt="URI Logo">
+      </a>
 
-    <!-- Hamburger Icon -->
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <div class="hamburger" onclick="toggleMenu()" role="button" tabindex="0" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-    <nav id="nav-links">
-      <a href="#about">About</a>
-      <a href="#objectives">Objectives</a>
-      <a href="#programs">Programs</a>
-      <a href="#committees">Committees</a>
-      <a href="#cta">Apply</a>
-      <a href="#contact">Contact Us</a>
-    </nav>
+      <nav id="nav-links" role="navigation">
+        <a href="#about">About</a>
+        <a href="#objectives">Objectives</a>
+        <a href="#programs">Programs</a>
+        <a href="#committees">Committees</a>
+        <a href="#cta">Apply</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <h1>Start Your Research Journey with URI – Suez Canal Branch</h1>
-    <p>Empowering students to participate in real research projects and develop academic, research, and leadership skills.</p>
-    <button onclick="window.location.href='#cta'">Join Us Now</button>
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Start Your Research Journey with URI – Suez Canal Branch</h1>
+      <p>Empowering students to participate in real research projects and develop academic, research, and leadership skills.</p>
+      <a href="#cta" class="hero-button">Join Us Now</a>
+    </div>
   </section>
 
   <!-- About Section -->
-  <section class="about-home" id="about">
-    <h2>About URI – Suez Canal Branch</h2>
-    <p>URI – Undergraduate Research Initiative | Suez Canal Branch is a university student initiative that aims to empower students to participate in practical research projects, develop their academic, research, and leadership skills, and provide opportunities for real research projects and training programs at Suez Canal University.</p>
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-content fade-in">
+        <div class="section-header">
+          <h2 class="section-title">About URI – Suez Canal Branch</h2>
+        </div>
+        <p class="section-description">URI – Undergraduate Research Initiative | Suez Canal Branch is a university student initiative that aims to empower students to participate in practical research projects, develop their academic, research, and leadership skills, and provide opportunities for real research projects and training programs at Suez Canal University.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Objectives Section -->
   <section id="objectives">
-    <h2>Our Objectives</h2>
-    <div class="objectives">
-      <div class="objective-card">
-        <h3>Research Skills</h3>
-        <p>Enhance students' research and leadership abilities.</p>
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Objectives</h2>
       </div>
-      <div class="objective-card">
-        <h3>Academic Initiatives</h3>
-        <p>Promote academic initiatives and community projects.</p>
-      </div>
-      <div class="objective-card">
-        <h3>Hands-on Training</h3>
-        <p>Offer hands-on training programs such as SRT, RL, and RS.</p>
-      </div>
-      <div class="objective-card">
-        <h3>Networking</h3>
-        <p>Build a network between students, researchers, and academic initiatives.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Programs Section -->
-  <section id="programs">
-    <h2>Our Programs</h2>
-    <div class="programs">
-      <div class="program-card">
-        <h3>SRT – Scientific Research Training</h3>
-        <p>Practical training in scientific research for undergraduate students.</p>
-        
-      </div>
-      <div class="program-card">
-        <h3>RL – Research Leader</h3>
-        <p>Preparing students to become research leaders and manage projects.</p>
-        
-      </div>
-      <div class="program-card">
-        <h3>RS – Research School</h3>
-        <p>Learn research methodologies in depth to conduct academic research effectively.</p>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- Committees Section -->
-  <section id="committees">
-    <h2>Our Committees</h2>
-    <div class="committees">
-      <div class="committee-card">
-        <h3>Public Relations (PR)</h3>
-        <p>Manage campaigns and student communication.</p>
-      </div>
-      <div class="committee-card">
-        <h3>Media</h3>
-        <p>Design, photography, and content production.</p>
-      </div>
-      <div class="committee-card">
-        <h3>Human Resource (HR)</h3>
-        <p>Manage people in an organization, including hiring, training, development, and employee relations.</p>
-      </div>
-      <div class="committee-card">
-        <h3>Faculty Ambassadors (FA)</h3>
-        <p>Represent their college by supporting events, guiding students, and promoting the college's image.</p>
+      <div class="grid grid-4">
+        <div class="card fade-in">
+          <div class="card-icon">
+            <i class="fas fa-microscope"></i>
+          </div>
+          <h3 class="card-title">Public Relations (PR)</h3>
+          <p class="card-text">Manage campaigns and student communication to build strong community connections.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="card-icon">
+            <i class="fas fa-camera"></i>
+          </div>
+          <h3 class="card-title">Media</h3>
+          <p class="card-text">Design, photography, and content production to showcase our initiatives effectively.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="card-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="card-title">Human Resource (HR)</h3>
+          <p class="card-text">Manage people in our organization, including hiring, training, development, and member relations.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="card-icon">
+            <i class="fas fa-university"></i>
+          </div>
+          <h3 class="card-title">Faculty Ambassadors (FA)</h3>
+          <p class="card-text">Represent their college by supporting events, guiding students, and promoting the college's image.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section id="cta" class="cta">
-    <h2>Ready to be part of the URI experience? Choose your path!</h2>
-    <img src="imgs/uri2.jpg" alt="Suez Canal Branch Logo">
-    <div class="cta-buttons">
-      <a href="https://chat.whatsapp.com/KZctrjh4a3g41JjmDpk0b0?mode=ems_wa_t" class="intern" target="_blank">Join as an Intern</a>
-      <a href="https://forms.gle/o4ean9Y34tr1Ye81A" class="member" target="_blank">Join as a Member</a>
+  <section id="cta" class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="section-title">Ready to be part of the URI experience? Choose your path!</h2>
+        <div class="cta-logo">
+          <img src="imgs/uri2.jpg" alt="Suez Canal Branch Logo">
+        </div>
+        <div class="cta-buttons">
+          <a href="https://chat.whatsapp.com/KZctrjh4a3g41JjmDpk0b0?mode=ems_wa_t" target="_blank" class="cta-button primary" rel="noopener noreferrer">Join as an Trainee</a>
+          <a href="https://forms.gle/o4ean9Y34tr1Ye81A" target="_blank" class="cta-button secondary" rel="noopener noreferrer">Join as a Member</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="contact-home">
-    <!-- Social media -->
-    <section class="footer-social" id="contact">
-      <span>Get connected with us on social networks:</span>
-      <div>
-        <a href="https://www.facebook.com/61566335605324/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://wa.me/201284131362" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://www.instagram.com/uri_scu_" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:urisuezcanaluniversity@gmail.com aria-label="Email"><i class="fas fa-envelope"></i></a>
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-social">
+        <h3>Get connected with us on social networks:</h3>
+        <div class="social-links">
+          <a href="https://www.facebook.com/61566335605324/" target="_blank" class="social-link" aria-label="Facebook" rel="noopener noreferrer">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://wa.me/201284131362" target="_blank" class="social-link" aria-label="WhatsApp" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://www.instagram.com/uri_scu_" target="_blank" class="social-link" aria-label="Instagram" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="mailto:contact@uri-scu.org" class="social-link" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
       </div>
-    </section>
-    
-    <!-- Copyright -->
-    <div class="footer-copyright">
-      &copy; 2025 Karim Abd Elkarim & Abdalla Ahmed 
+      <div class="footer-copyright">
+        &copy; 2025 Karim Abd Elkarim & Abdalla Ahmed
+      </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
-  <script src="js/mdb.es.min.js"></script>
+ <script src="js/main.js"></script>
 </body>
 </html>
